@@ -1,0 +1,52 @@
+:root{
+    --primary-color:#202225;
+    --secondary-color:#32353B;
+    --msg-color:#40444B;
+    --button-color:#e6e4e4;
+    --botton-hover:#9881ff;
+}
+html{
+    background-color: var(--primary-color);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    min-height: 10%;
+    padding: 4rem;
+    border-radius: 0.5rem;
+}
+
+form input,button{
+    min-height: 20%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+#uname, #room{
+    background-color: var(--msg-color);
+    color:white;
+}
+#submit_btn{
+    cursor: pointer;
+    background-color: var(--button-color);
+}
+#submit_btn:hover{
+    background-color: var(--botton-hover);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
